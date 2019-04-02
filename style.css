@@ -1,0 +1,108 @@
+ * {
+margin:0;
+padding:0;
+ }
+ 
+.navbar{
+	height:100px;
+	margin-top:20px;
+ 	margin-left:60px;
+	margin-right:60px;
+}
+ 
+.glass_city_logo{
+	float:left;
+}	
+
+.glass_city_image{
+	float:left;
+	height:100px;
+	transition: all 0.5s;
+}	
+
+.glass_city_image:hover{
+	 transform: rotate(-5deg);
+}
+
+.menu_float{
+	margin-top:35px;
+	margin-left:10px;
+	margin-right:50px;
+	float:left;
+	width:calc(100% - 296px);
+}
+
+.facebook_icon{
+	margin-top:30px;
+	height:100px;
+	float:right;
+}
+
+/* Menu */
+
+.menu {
+  list-style: none;
+  width: 100%;
+  min-height:30px;
+  position: relative;
+}
+
+.menu li {
+	float: left;
+    width: 20%;
+    height: 100%;
+ }
+  
+.menu a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    z-index: 100;
+	opacity:.45;
+	transition: opacity .6s;
+  }
+  
+.menu a:hover{
+	opacity: 1;
+}
+
+li.slider {
+  width: calc(20% - 80px);
+  margin-left:40px;
+  border-radius: 3px;
+  height: 6px;
+  position: absolute;
+  left: 0;
+  bottom:-5px;
+  transition: left 0.5s, background-color .4s, margin-left 0.5s, width 0.5s;
+}
+
+.menu li:nth-child(1):hover ~ .slider {
+  left: 0;
+  background-color: orange;
+}
+.menu li:nth-child(2):hover ~ .slider {
+  left: 20%;
+  background-color: orange;
+}
+.menu li:nth-child(3):hover ~ .slider {
+  left: 40%;
+  background-color: orange;
+}
+.menu li:nth-child(4):hover ~ .slider {
+  width: calc(20% - 20px);
+  margin-left:10px;
+  left: 60%;
+  background-color: orange;
+}
+
+.menu li:nth-child(5):hover ~ .slider {
+  left: 80%;
+  background-color: orange;
+}
